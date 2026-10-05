@@ -36,6 +36,20 @@ T("12 27SPA6 + 915SB + CVAMA + T6", { odu: "car-27spa6", indoor: "bry-915sb", co
 T("LJ-A 37MURAQ36AA3 + 801SB + CVAMA3617XMA + ecobee3 lite, клозет", { odu: "car-37muraq", oduFull: "37MURAQ36AA3", indoor: "bry-801sb", coil: "cvama", coilFull: "CVAMA3617XMA", tstat: "ecobee3-lite", loc: "closet" },
   { noStop: true, has: ["RV_B", "MURA_S3", "DF_NEED", "DF_HPS", "DF_OAT", "DF_MURA_WD", "TON_MATCH", "VENT_B", "CLOSET_80"], tons: [3, 3], strip: [/→ 37MURAQ B /, /SEC-?1/, /Y_out.*→ 37MURAQ Y2/, /37MURAQ W, D → не используются/] });
 T("LJ-B 37MURAQ48 + 801SB + ADP C48A175L159 → СТОП", { odu: "car-37muraq", oduFull: "37MURAQ48AA3", indoor: "bry-801sb", coil: "adp-c48a175l159", tstat: "ecobee3-lite" }, { stops: ["REF_MISMATCH_UNVER", "THIRD_PARTY_COIL"] });
+// ---- R-410A в Калифорнии: правило по первоисточникам (CARB 17 CCR §95373/95375, EPA 40 CFR 84.54, 91 FR 31284)
+{
+  const r = data.rules.R410_CA_NEW, e = data.rules.R410_EXISTING;
+  const chk = (name, ok) => { if (ok) { pass++; console.log("✓ " + name); } else { fail++; console.log("✗ " + name); } };
+  chk("R410_CA_NEW: уровень stop", r.level === "stop");
+  chk("R410_CA_NEW: нет устаревшего «распродажа закончилась 31.12.2025»", !/31\.12\.2025/.test(r.text));
+  chk("R410_CA_NEW: источник — CARB и EPA, не только Carrier", /CARB_HFC/.test(r.src) && /EPA_TT\b/.test(r.src) && /EPA_TT2026/.test(r.src));
+  chk("R410_CA_NEW: сказано про замену наружного в системе 1+1", /1 наружный \+ 1 внутренний/.test(r.text));
+  chk("R410_CA_NEW: федеральное правило не выдано за калифорнийское", /Федерально EPA разрешает замену наружного/.test(r.text));
+  chk("R410_EXISTING: порог EPA 75%/100% и последующая замена испарителя", /75%/.test(e.text) && /последующая замена испарителя/.test(e.text) && /EPA_TT2026/.test(e.src));
+  for (const k of ["CARB_HFC", "EPA_TT", "EPA_TT2026"]) chk("источник " + k + " есть в data.sources с файлом", !!(data.sources[k] && data.sources[k].file && data.sources[k].url));
+}
+T("27SPA6 (R-454B, новый) → правил R-410A нет", { odu: "car-27spa6", indoor: "car-59sc5b", coil: "cvama", tstat: "ecobee-premium" }, { not: ["R410_CA_NEW", "R410_EXISTING"] });
+T("24VNA6 (R-410A, новый) → СТОП R410_CA_NEW с источником CARB", { odu: "car-24vna6", indoor: "car-59mn7c", coil: "cvpma", tstat: "car-infinity" }, { stops: ["R410_CA_NEW"] });
 // ---- тесты исправлений
 T("45MUAAQ с 27SCA5 → СТОП", { odu: "car-27sca5", indoor: "45muaaq", tstat: "ecobee3-lite" }, { stops: ["ONLY_37MU"] });
 T("45MULAQ + 37MURA → без СТОП crossover", { odu: "car-37muraq", indoor: "car-59tp6c", coil: "45mulaq", tstat: "ecobee3-lite" }, { noStop: true, has: ["RDS_UNKNOWN", "MURA_FURN_LIST"] });

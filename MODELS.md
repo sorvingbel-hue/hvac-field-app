@@ -1,6 +1,6 @@
 # Модели полевого приложения
 
-Сгенерировано из data.json (2026-10-04 19:33 PT). Основа: hvac-research/build/field_rules.py + catalog.py.
+Сгенерировано из data.json (2026-10-04 19:49 PT). Основа: hvac-research/build/field_rules.py + catalog.py.
 
 Набор **core** — тестовый набор для San Diego. **regress** — только для повторного прогона 12 сценариев (в приложении скрыты, включаются в «Моё»).
 

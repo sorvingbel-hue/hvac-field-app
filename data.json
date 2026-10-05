@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04 19:33 PT",
+ "generated": "2026-10-04 19:49 PT",
  "models": [
   {
    "id": "car-24acc4",
@@ -1584,13 +1584,13 @@
   },
   "R410_CA_NEW": {
    "level": "stop",
-   "text": "{odu} — R-410A. Новые R-410A AC/HP в Калифорнии нельзя ставить даже для сервиса с 01.01.2025; срок распродажи сплитов закончился 31.12.2025. Если блок остаётся — отметь «Наружный остаётся».",
-   "src": "CAR_TG стр.2"
+   "text": "{odu} — R-410A. В Калифорнии с 01.01.2025 новый наружный блок на R-410A ставить нельзя: ни в новую систему, ни на замену наружного в системе «1 наружный + 1 внутренний». Такую замену CARB считает новой системой, а R-410A (GWP 2088 ≥ 750) для новых систем запрещён. Федерально EPA разрешает замену наружного блока как ремонт и с 27.07.2026 сняла срок установки складских блоков выпуска до 2025 г. Но в CA действует более строгое правило CARB. Для систем с несколькими наружными или внутренними блоками порог CARB другой: за 3 года заменено ≥75% внутренних и 100% наружных. Склад выпуска до 2025 г.: Carrier пишет, что в CA нельзя; письменного разъяснения CARB в базе нет (не проверено). Если наружный блок остаётся, отметь «Наружный остаётся».",
+   "src": "CARB_HFC §95373 (New AC Equipment п.2), §95374 табл.3, §95375(c)(1); EPA_TT §84.54(c)(1),(e); EPA_TT2026 разд. IV.F, IV.H; CAR_TG стр.2 сноска 1"
   },
   "R410_EXISTING": {
    "level": "warn",
-   "text": "Наружный R-410A остаётся. Внутренний R-410A можно ставить только как сервисную замену; это не должно стать «новой системой» (сборка с нуля, рост мощности, замена ≥75% испарителей и 100% наружных).",
-   "src": "CAR_TG стр.2"
+   "text": "Наружный R-410A остаётся. Внутренний R-410A можно ставить только как сервисную замену, и это не должно стать «новой системой». По EPA новая система — это сборка с нуля, рост мощности или замена ≥75% испарителей и 100% наружных. EPA (2026) отдельно уточняет: если наружный блок уже меняли, последующая замена испарителя тоже считается новой системой. В CA (CARB) для системы «1+1» новой системой делает установка нового наружного блока.",
+   "src": "EPA_TT §84.54(e); EPA_TT2026 разд. IV.F; CARB_HFC §95373; CAR_TG стр.2"
   },
   "R410_INDOOR_NEW": {
    "level": "warn",
@@ -2021,6 +2021,12 @@
    "kind": "OEM brochure",
    "file": "Bryant-Preferred-Furnaces-01-8114-011-01.pdf"
   },
+  "CARB_HFC": {
+   "title": "CARB HFC Regulation, 17 CCR §95371–95378: Final Regulation Order 2020 (CARB) + текущий текст CCR через Cornell LII (§95373 определения «New Air-conditioning Equipment» и «Date of Manufacture»; §95374 табл. 3; §95375(c)(1))",
+   "url": "https://ww2.arb.ca.gov/sites/default/files/barcu/regact/2020/hfc2020/frorevised.pdf",
+   "kind": "норматив (CA)",
+   "file": "archive/codes/CARB-HFC-FRO-2020.pdf; archive/codes/CCR17-95373-Definitions-LII-2026-10-04.txt; archive/codes/CCR17-95375-Requirements-LII-2026-10-04.txt"
+  },
   "CAR_R454_IS": {
    "title": "Carrier: R-454B Installation & Service (training deck, 2024)",
    "url": "https://resource.carrierenterprise.com/is/content/Watscocom/ce_hom_home_20240520_r-454b-install-service_documentpdf",
@@ -2068,6 +2074,18 @@
    "url": "https://downloads.ctfassets.net/a3qyhfznts9y/4JZlbdlkyh7lseeMvenfJY/2bea037b752b3b200759969bcc82dcf5/ecobee_Premium_install-setup-user_manual_v1.pdf",
    "kind": "OEM (ecobee)",
    "file": "premium.pdf"
+  },
+  "EPA_TT": {
+   "title": "EPA Technology Transitions, 40 CFR part 84 subpart B (eCFR, редакция на 2026-10-01): §84.54(c)(1), §84.54(e)",
+   "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-84/subpart-B",
+   "kind": "норматив (US)",
+   "file": "archive/codes/eCFR-40CFR84-SubpartB-2026-10-01.txt"
+  },
+  "EPA_TT2026": {
+   "title": "EPA final rule 91 FR 31284 (опубл. 26.05.2026, вступило 27.07.2026), Reconsideration of Technology Transitions: разд. IV.F (замена наружного блока), IV.H (склад до 2025 г.)",
+   "url": "https://www.federalregister.gov/documents/2026/05/26/2026-10387/phasedown-of-hydrofluorocarbons-reconsideration-of-certain-regulatory-requirements-promulgated-under",
+   "kind": "норматив (US)",
+   "file": "archive/codes/FR-2026-10387-EPA-TT-Reconsideration-91FR31284.txt"
   },
   "F59MN7C": {
    "title": "Carrier 59MN7C Installation/Service Instructions",
