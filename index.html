@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#123456">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="HVAC связка">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+<title>HVAC — проверка связки</title>
+</head>
+<body>
+<header>
+  <h1>Проверка связки</h1>
+  <nav>
+    <button data-tab="order" class="on">Связка</button>
+    <button data-tab="moe">Моё</button>
+    <button data-tab="ref">Справка</button>
+  </nav>
+</header>
+
+<main>
+<section id="tab-order">
+  <div class="card">
+    <div class="lbl">Где стоит внутренний блок</div>
+    <div class="seg" data-field="loc">
+      <button data-v="closet">Клозет</button><button data-v="garage">Гараж</button><button data-v="attic">Чердак</button><button data-v="basement">Подвал</button><button data-v="other">Другое</button>
+    </div>
+    <label class="tg"><input type="checkbox" data-field="overLiving"> Над жилой зоной</label>
+    <div class="lbl">Поток воздуха</div>
+    <div class="seg" data-field="orient">
+      <button data-v="up">Вверх</button><button data-v="down">Вниз</button><button data-v="horiz">Горизонт</button>
+    </div>
+    <label class="tg"><input type="checkbox" data-field="coastal"> Объект у побережья</label>
+  </div>
+
+  <div class="card">
+    <div class="lbl">Наружный блок</div>
+    <button class="pick" data-pick="odu">Выбрать…</button>
+    <label class="tg"><input type="checkbox" data-field="oduStays"> Наружный остаётся (не новый)</label>
+    <input class="txt" data-field="oduFull" placeholder="Полный номер, напр. 37MURAQ36AA3 (необязательно)" autocapitalize="characters" autocorrect="off" spellcheck="false" inputmode="text">
+  </div>
+
+  <div class="card">
+    <div class="lbl">Внутренний: печь или фанкойл</div>
+    <button class="pick" data-pick="indoor">Выбрать…</button>
+    <div id="coil-box" hidden>
+      <div class="lbl">Змеевик на печь</div>
+      <button class="pick" data-pick="coil">Выбрать…</button>
+      <input class="txt" data-field="coilFull" placeholder="Полный номер, напр. CVAMA3617XMA (необязательно)" autocapitalize="characters" autocorrect="off" spellcheck="false">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="lbl">Термостат</div>
+    <button class="pick" data-pick="tstat">Выбрать…</button>
+    <label class="tg"><input type="checkbox" data-field="hasC" checked> Есть провод C</label>
+  </div>
+
+  <div id="result"></div>
+  <button id="reset" class="ghost">Сбросить связку</button>
+</section>
+
+<section id="tab-moe" hidden>
+  <div class="card">
+    <div class="lbl">Бренды, с которыми работаю</div>
+    <div id="moe-brands"></div>
+  </div>
+  <div class="card">
+    <div class="lbl">Термостаты в списке</div>
+    <div id="moe-tstats"></div>
+  </div>
+  <div class="card">
+    <label class="tg"><input type="checkbox" id="moe-regress"> Показывать модели для прогона старых сценариев</label>
+    <p class="muted">Это модели, которые нужны только для повторной проверки 12 сценариев (26SPA6, 26VNA1, 27TPA8, 27VNA3, 291VAN, 987M, 58SB0).</p>
+  </div>
+  <p class="muted">Настройки хранятся только на этом телефоне.</p>
+</section>
+
+<section id="tab-ref" hidden>
+  <div class="card"><p class="muted" id="ref-meta"></p></div>
+  <div id="ref-list"></div>
+</section>
+</main>
+
+<div id="sheet" class="sheet" hidden>
+  <div class="sheet-bg"></div>
+  <div class="sheet-body">
+    <div class="sheet-head"><span id="sheet-title"></span><button id="sheet-close">Закрыть</button></div>
+    <div id="sheet-list"></div>
+  </div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

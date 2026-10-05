@@ -1,0 +1,2170 @@
+{
+ "generated": "2026-10-04 19:33 PT",
+ "models": [
+  {
+   "id": "car-24acc4",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "24ACC4",
+   "catalog": "24ACC4",
+   "kind": "ac",
+   "ref": "R-410A",
+   "stages": "1",
+   "ctrl": "24v",
+   "rv": null,
+   "coastal": null,
+   "ton": "carrier",
+   "why": "Comfort AC R-410A (Puron) прошлых лет: проверка «наружный R-410A остаётся» и смешения хладагентов",
+   "facts": [
+    [
+     "24ACA4/24ACC4, Puron (R-410A)",
+     "ACC_II стр.1, 3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC (наружный)",
+    "model": "24ACC4",
+    "ref": "R-410A",
+    "status": "проверено по OEM (модель); замена — не проверено (по памяти/косвенно) — уточнить"
+   }
+  },
+  {
+   "id": "car-24vna6",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "24VNA6",
+   "catalog": "24VNA6",
+   "kind": "ac",
+   "ref": "R-410A",
+   "stages": "vs",
+   "ctrl": "abcd",
+   "rv": null,
+   "coastal": false,
+   "ton": "carrier",
+   "why": "старый Infinity VS: проверка шины ABCD; прямой R-454B замены нет",
+   "facts": [
+    [
+     "Управление — Infinity Control; обычный термостат только в аварийном режиме, одна скорость в охлаждении",
+     "VNA_II стр.17; VNA_SM стр.5"
+    ],
+    [
+     "Прямой R-454B замены нет: «Use 27VNA3 Heat Pump as an alternative»",
+     "CAR_TG стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC (наружный)",
+    "model": "24VNA6",
+    "ref": "R-410A",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-25sca5",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "25SCA5",
+   "catalog": "25SCA5",
+   "kind": "hp",
+   "ref": "R-410A",
+   "stages": "1",
+   "ctrl": "24v",
+   "rv": "O",
+   "coastal": true,
+   "ton": "carrier",
+   "why": "Comfort ТН R-410A прошлых лет: существующий ТН + замена печи/змеевика",
+   "facts": [
+    [
+     "HP R-410A, 1 ступень, есть Coastal-опция; замена — 27SCA5",
+     "CAR_TG стр.3"
+    ],
+    [
+     "Клапан O: «Circuit R–O energizes reversing valve switching it to cooling»",
+     "CR_RESSM стр.14"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "HP (наружный)",
+    "model": "25SCA5",
+    "ref": "R-410A",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-26sca5",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "26SCA5",
+   "catalog": "26SCA5",
+   "kind": "ac",
+   "ref": "R-454B",
+   "stages": "1",
+   "ctrl": "24v",
+   "rv": null,
+   "coastal": true,
+   "ton": "carrier",
+   "why": "новый базовый AC R-454B, замена 24SCA5",
+   "facts": [
+    [
+     "AC R-454B, 1 ступень, есть Coastal-опция; замена 24SCA5",
+     "CAR_TG стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "26SCA5",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-26spa6",
+   "set": "regress",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "26SPA6",
+   "catalog": "26SPA6",
+   "kind": "ac",
+   "ref": "R-454B",
+   "stages": "1",
+   "ctrl": "24v",
+   "rv": null,
+   "coastal": false,
+   "ton": "carrier",
+   "why": "нужен для прогона scenarios.txt №10",
+   "facts": [
+    [
+     "AC R-454B Performance, 1 ступень, InteliSense (сноска 2), Coastal нет",
+     "CAR_TG стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "26SPA6",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-26vna1",
+   "set": "regress",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "26VNA1",
+   "catalog": "26VNA1",
+   "kind": "ac",
+   "ref": "R-454B",
+   "stages": "vs",
+   "ctrl": "abcd",
+   "rv": null,
+   "coastal": false,
+   "ton": "carrier",
+   "why": "нужен для прогона scenarios.txt №2 (Infinity AC R-454B)",
+   "facts": [
+    [
+     "AC R-454B VS, сноска 1 = Infinity Fully Communicating",
+     "CAR_TG стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "26VNA1",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-27sca5",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "27SCA5",
+   "catalog": "27SCA5",
+   "kind": "hp",
+   "ref": "R-454B",
+   "stages": "1",
+   "ctrl": "24v",
+   "rv": "O",
+   "rv_verified": false,
+   "coastal": true,
+   "ton": "carrier",
+   "why": "новый базовый ТН R-454B, замена 25SCA5",
+   "facts": [
+    [
+     "HP R-454B, 1 ступень, есть Coastal-опция; замена 25SCA5",
+     "CAR_TG стр.3"
+    ],
+    [
+     "Клапан O в охлаждении — по сервис-мануалу R-22/R-410A; для R-454B серии документа в базе нет (не проверено)",
+     "CR_RESSM стр.14"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "27SCA5",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-27spa6",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "27SPA6",
+   "catalog": "27SPA6",
+   "kind": "hp",
+   "ref": "R-454B",
+   "stages": "1",
+   "ctrl": "24v",
+   "rv": "O",
+   "rv_verified": false,
+   "coastal": false,
+   "ton": "carrier",
+   "why": "Performance ТН R-454B, 1 ступень, без Coastal; в сценариях 5, 6, 12",
+   "facts": [
+    [
+     "HP R-454B, 1 ступень, InteliSense (сноска 2), Coastal нет",
+     "CAR_TG стр.3"
+    ],
+    [
+     "Клапан O — по CR_RESSM (R-22/R-410A), для R-454B не проверено",
+     "CR_RESSM стр.14"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "27SPA6",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-27tpa8",
+   "set": "regress",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "27TPA8",
+   "catalog": "27TPA8",
+   "kind": "hp",
+   "ref": "R-454B",
+   "stages": "2",
+   "ctrl": "24v",
+   "rv": "O",
+   "rv_verified": false,
+   "coastal": true,
+   "ton": "carrier",
+   "why": "нужен для прогона scenarios.txt №11 (2-ступенчатый ТН)",
+   "facts": [
+    [
+     "HP R-454B, 2 ступени, InteliSense (сноска 2), есть Coastal-опция",
+     "CAR_TG стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "27TPA8",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-27vna0",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "27VNA0",
+   "catalog": "27VNA0",
+   "kind": "hp",
+   "ref": "R-454B",
+   "stages": "vs",
+   "ctrl": "abcd",
+   "rv": null,
+   "coastal": false,
+   "ton": "carrier",
+   "why": "новый Infinity VS ТН R-454B: только ABCD",
+   "facts": [
+    [
+     "«Infinity System Control with Greenspeed Intelligence required»",
+     "VNA0_PD стр.1"
+    ],
+    [
+     "Номенклатура: цифры 7–8 = номинальная холодопроизводительность, 1000 Btuh",
+     "VNA0_PD стр.2"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "27VNA0",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-27vna3",
+   "set": "regress",
+   "cat": "odu",
+   "brand": "Carrier",
+   "model": "27VNA3",
+   "catalog": "27VNA3",
+   "kind": "hp",
+   "ref": "R-454B",
+   "stages": "vs",
+   "ctrl": "abcd",
+   "rv": null,
+   "coastal": false,
+   "ton": "carrier",
+   "why": "нужен для прогона scenarios.txt №3",
+   "facts": [
+    [
+     "HP R-454B VS, сноска 1 = Infinity Fully Communicating; замена 25VNA4 и альтернатива 24VNA6",
+     "CAR_TG стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "27VNA3",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-37muraq",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier/Bryant",
+   "model": "37MURAQ",
+   "catalog": "37MURAQ / 37MUHAQ",
+   "kind": "hp",
+   "ref": "R-454B",
+   "stages": "vs",
+   "ctrl": "mura",
+   "rv": "B",
+   "coastal": false,
+   "ton": "mura",
+   "why": "crossover-ТН R-454B: dual fuel с печью по сценарию 3 (кейс La Jolla)",
+   "facts": [
+    [
+     "Сценарии: 1 — 24V-термостат на 45MU + S1/S2; 2 — пульт KSACN1401AAA; 3 — 24V на клеммы ODU, DIP 2 = ON; «third party indoor unit or cased coil and gas furnace» — в сценарии 3",
+     "MURA_IM стр.23–24"
+    ],
+    [
+     "Клапан под напряжением в нагреве (клемма B)",
+     "MURA_IM стр.24"
+    ],
+    [
+     "Схемы crossover (рисунки): термостат R/C → печь/фанкойл и ODU R/C; O/B → ODU B; Y_out платы RDS → ODU Y2 (Y1 не подключён); W_out → W печи; с печью W и D на ODU не используются; с фанкойлом FMA5X/FJ5 W термостата идёт и на ODU D",
+     "MURA_IM стр.25–28 (Fig. 25–28, сверено по изображению страницы)"
+    ],
+    [
+     "Dual fuel: HPS обязателен, нужен dual-fuel термостат, одновременная работа ТН и печи запрещена, клеммы W и D на ODU не используются",
+     "MURA_IM стр.25–26"
+    ],
+    [
+     "В Bryant Launch Kit тот же 37MURAQ (Legacy)",
+     "BRY_LK стр.25"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "AC/HP (наружный)",
+    "model": "37MURAQ / 37MUHAQ",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-38muraq",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Carrier/Bryant",
+   "model": "38MURAQ",
+   "catalog": "38MURAQ**AA3",
+   "kind": "hp",
+   "ref": "R-410A",
+   "stages": "vs",
+   "ctrl": "mura410",
+   "rv": "B",
+   "coastal": false,
+   "ton": "mura",
+   "why": "предшественник 37MURA на R-410A: существующий блок",
+   "facts": [
+    [
+     "Совместим с большинством Comfort/Performance фанкойлов и печей; список FB4CN, FV4CN, FMA4X… и 58S(B,C), 59SC2, 59TP*…",
+     "XW_38MURA стр.1–5"
+    ],
+    [
+     "«O/B energized on heating»; с печью — только dual-fuel термостат, без одновременной работы",
+     "XW_38MURA стр.6"
+    ],
+    [
+     "38MURAQ36AA3 = 3.00 т / 36 000 Btuh",
+     "IM_38MURA стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "HP (наружный)",
+    "model": "38MURAQ**AA3",
+    "ref": "R-410A",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-127t",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Bryant",
+   "model": "127TAN",
+   "catalog": "127TAN/127TBN",
+   "kind": "ac",
+   "ref": "R-410A",
+   "stages": "2",
+   "ctrl": "24v",
+   "rv": null,
+   "coastal": true,
+   "ton": "bryant",
+   "why": "Bryant Preferred 2-ступенчатый AC R-410A: проверка Y2 у термостата и R-410A",
+   "facts": [
+    [
+     "127T(A/B)N Puron, 2 ступени, Coastal Yes; замена 148TAN",
+     "BRY_LK стр.24"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "AC (наружный)",
+    "model": "127TAN/127TBN",
+    "ref": "R-410A",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-146san",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Bryant",
+   "model": "146SAN",
+   "catalog": "146SAN",
+   "kind": "ac",
+   "ref": "R-454B",
+   "stages": "1",
+   "ctrl": "24v",
+   "rv": null,
+   "coastal": false,
+   "ton": "bryant",
+   "why": "новый Bryant Preferred AC R-454B (замена 126S)",
+   "facts": [
+    [
+     "146SAN Puron Advance, 1 ступень, Coastal No",
+     "BRY_LK стр.24"
+    ],
+    [
+     "Номенклатура Bryant: цифры 8–9 = номинал (36/37 = 3 т)",
+     "BRY_LK стр.24"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "AC (наружный)",
+    "model": "146SAN",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-246san",
+   "set": "core",
+   "cat": "odu",
+   "brand": "Bryant",
+   "model": "246SAN",
+   "catalog": "246SAN",
+   "kind": "hp",
+   "ref": "R-454B",
+   "stages": "1",
+   "ctrl": "24v",
+   "rv": "O",
+   "rv_verified": false,
+   "coastal": false,
+   "ton": "bryant",
+   "why": "новый Bryant Preferred ТН R-454B",
+   "facts": [
+    [
+     "246SAN Puron Advance, 1 ступень, InteliSense (сноска 2), Coastal No",
+     "BRY_LK стр.25"
+    ],
+    [
+     "Клапан O — по CR_RESSM (Carrier), для Bryant R-454B не проверено",
+     "CR_RESSM стр.14"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "HP (наружный)",
+    "model": "246SAN",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-291van",
+   "set": "regress",
+   "cat": "odu",
+   "brand": "Bryant",
+   "model": "291VAN",
+   "catalog": "291VAN",
+   "kind": "hp",
+   "ref": "R-454B",
+   "stages": "vs",
+   "ctrl": "abcd",
+   "rv": null,
+   "coastal": false,
+   "ton": "bryant",
+   "why": "нужен для прогона scenarios.txt №4 (Evolution)",
+   "facts": [
+    [
+     "291VAN Evolution VS, сноска 1 = Evolution Fully Communicating (cold climate 4.5 т)",
+     "BRY_LK стр.25"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "HP (наружный)",
+    "model": "291VAN",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-58sc0",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Carrier",
+   "model": "58SC0",
+   "catalog": "58SC0/58SC1",
+   "bus": "24v",
+   "afue": "80",
+   "vent": "typeB",
+   "vent_verified": false,
+   "mura_fig": "25",
+   "why": "Carrier 80% одноступенчатая; есть в списке 37MURA Fig. 25",
+   "facts": [
+    [
+     "58SC(0,1)B в списке Fig. 25 (single-stage furnace) для 37MURA",
+     "MURA_IM стр.25"
+    ],
+    [
+     "Вент Type B — по правилу «58* = 80%» (CAR_WEB_F); IM/PD 58SC в базе нет — не проверено",
+     "CAR_WEB_F"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "Газовая печь",
+    "model": "58SC0/58SC1",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-58sb0",
+   "set": "regress",
+   "cat": "furnace",
+   "brand": "Carrier",
+   "model": "58SB0",
+   "catalog": "58SB0/58SB1",
+   "bus": "24v",
+   "afue": "80",
+   "vent": "typeB",
+   "vent_verified": false,
+   "mura_fig": "25",
+   "why": "нужен для прогона scenarios.txt №10",
+   "facts": [
+    [
+     "58SB(0,1)B в списке Fig. 25 для 37MURA",
+     "MURA_IM стр.25"
+    ],
+    [
+     "80% — по CAR_WEB_F; IM в базе нет",
+     "CAR_WEB_F"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "Газовая печь",
+    "model": "58SB0/58SB1",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-59sc5b",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Carrier",
+   "model": "59SC5B",
+   "catalog": "59SC5B",
+   "bus": "24v",
+   "afue": "90",
+   "vent": "pvc",
+   "vent_verified": false,
+   "mura_fig": null,
+   "why": "Carrier конденсационная Comfort без шины; НЕТ в списках 37MURA Fig. 25/26",
+   "facts": [
+    [
+     "Condensing Gas Furnace; Communication System: none; клеммы Com 24V, R, W, G, Y",
+     "F59SC5_PD стр.1, 3"
+    ],
+    [
+     "HYBRID HEAT dual fuel поддерживается",
+     "F59SC5_PD стр.2"
+    ],
+    [
+     "Материал вента в тексте PD не назван (вент PVC — по классу конденсационной печи, сверь IM)",
+     "F59SC5_PD стр.1"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "Газовая печь",
+    "model": "59SC5B",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-59tp6c",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Carrier",
+   "model": "59TP6C",
+   "catalog": "59TP6",
+   "bus": "24v",
+   "afue": "90",
+   "vent": "pvc",
+   "vent_verified": true,
+   "mura_fig": "26",
+   "why": "2-ступенчатая Performance без шины; есть в 37MURA Fig. 26",
+   "facts": [
+    [
+     "«Two-Stage, Non-Communicating»",
+     "F59TP6C стр.1"
+    ],
+    [
+     "Category IV; PVC/ABS DWV вент (и полипропилен по листингу)",
+     "F59TP6C стр.5, 29"
+    ],
+    [
+     "HYBRID HEAT: настроить термостат на dual fuel; HPS у ТН обязателен",
+     "F59TP6C стр.29"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "Газовая печь",
+    "model": "59TP6",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-59tn6",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Carrier",
+   "model": "59TN6",
+   "catalog": "59TN6",
+   "bus": "abcd?",
+   "afue": "90",
+   "vent": "pvc",
+   "vent_verified": false,
+   "mura_fig": "26",
+   "why": "Infinity 96: проверка шины по печи; в базе нет PD — communicating не подтверждён",
+   "facts": [
+    [
+     "59TN6C в списке Fig. 26 (24V-схема crossover) — сам факт ABCD этим не подтверждается",
+     "MURA_IM стр.26"
+    ],
+    [
+     "Communicating (Infinity) — PD 59TN6 в базе НЕТ: не проверено (нужен импорт PD)",
+     "—"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "Газовая печь",
+    "model": "59TN6",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "car-59mn7c",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Carrier",
+   "model": "59MN7C",
+   "catalog": "59MN7",
+   "bus": "abcd",
+   "afue": "90",
+   "vent": "pvc",
+   "vent_verified": true,
+   "mura_fig": null,
+   "why": "модулирующая печь с разъёмом communication — эталон печи на шине",
+   "facts": [
+    [
+     "Communication Connector — при управлении communicating User Interface",
+     "F59MN7C стр.26"
+    ],
+    [
+     "Category IV; в комплекте CPVC→PVC адаптер дренажа",
+     "F59MN7C стр.5–6"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier",
+    "type": "Газовая печь",
+    "model": "59MN7",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-801sb",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Bryant",
+   "model": "801SB",
+   "catalog": "800S/801S",
+   "bus": "24v",
+   "afue": "80",
+   "vent": "typeB",
+   "vent_verified": true,
+   "mura_fig": "25",
+   "why": "Bryant 80% Legacy, есть полные IM и PD в базе; кейс La Jolla",
+   "facts": [
+    [
+     "Category I fan-assisted",
+     "B800SB стр.4"
+    ],
+    [
+     "Type B vent (side outlet, где требуется)",
+     "B800SB_PD стр.12"
+    ],
+    [
+     "Communication System: None",
+     "B800SB_PD стр.4"
+    ],
+    [
+     "Dual fuel: HPS у ТН обязателен; датчик наружной температуры обязателен во всех HYBRID HEAT; термостат настроить на dual fuel",
+     "B800SB стр.18 (Fig. 29, прим. 1, 4, 8)"
+    ],
+    [
+     "Гараж: горелки и источники воспламенения ≥ 18\" над полом",
+     "B800SB стр.5"
+    ],
+    [
+     "8(0,1)SB в списке Fig. 25 для 37MURA",
+     "MURA_IM стр.25"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "Газовая печь",
+    "model": "800S/801S",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-915sb",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Bryant",
+   "model": "915SB",
+   "catalog": "915SB",
+   "bus": "24v",
+   "afue": "90",
+   "vent": "pvc",
+   "vent_verified": true,
+   "mura_fig": null,
+   "why": "Bryant конденсационная Legacy без шины; есть IM в базе",
+   "facts": [
+    [
+     "Category IV condensing, direct-vent (2-pipe)",
+     "B915SB стр.5"
+    ],
+    [
+     "Гараж ≥ 18\"",
+     "B915SB стр.6"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "Газовая печь",
+    "model": "915SB",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-926t",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Bryant",
+   "model": "926T",
+   "catalog": "926T",
+   "bus": "24v",
+   "afue": "90",
+   "vent": "pvc",
+   "vent_verified": false,
+   "mura_fig": "26",
+   "why": "Bryant Preferred 2-ступенчатая, не Evolution (не на шине)",
+   "facts": [
+    [
+     "Two-Stage (927T & 926T), колонка BETTER: ecobee for Bryant, InteliSense (не Evolution)",
+     "B_PREF_F стр.4"
+    ],
+    [
+     "926TC в списке Fig. 26",
+     "MURA_IM стр.26"
+    ],
+    [
+     "Вент PVC — по префиксу 9xx (PDS800SB стр.3: 9 = 90+%), IM 926T в базе нет",
+     "B800SB_PD стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "Газовая печь",
+    "model": "926T",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-986t",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Bryant",
+   "model": "986T",
+   "catalog": "986T",
+   "bus": "abcd",
+   "afue": "90",
+   "vent": "pvc",
+   "vent_verified": false,
+   "mura_fig": "26",
+   "why": "Evolution 2-ступенчатая на шине",
+   "facts": [
+    [
+     "Колонка BEST (987M, 987T & 986T): Evolution Connex, «Evolution fully communicating system», communicating VS blower",
+     "B_PREF_F стр.4"
+    ],
+    [
+     "986TD в списке Fig. 26",
+     "MURA_IM стр.26"
+    ],
+    [
+     "Вент PVC — по префиксу 9xx (PDS800SB стр.3), IM 986T в базе нет",
+     "B800SB_PD стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "Газовая печь",
+    "model": "986T",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-987m",
+   "set": "regress",
+   "cat": "furnace",
+   "brand": "Bryant",
+   "model": "987M",
+   "catalog": "987M",
+   "bus": "abcd",
+   "afue": "90",
+   "vent": "pvc",
+   "vent_verified": false,
+   "mura_fig": null,
+   "why": "нужен для прогона scenarios.txt №4",
+   "facts": [
+    [
+     "Modulating (987M), колонка BEST: Evolution fully communicating",
+     "B_PREF_F стр.4"
+    ],
+    [
+     "Вент — по префиксу 9xx",
+     "B800SB_PD стр.3"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "Газовая печь",
+    "model": "987M",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "bry-880ta",
+   "set": "core",
+   "cat": "furnace",
+   "brand": "Bryant",
+   "model": "880TA",
+   "catalog": "880TA",
+   "bus": "abcd?",
+   "afue": "80",
+   "vent": "typeB",
+   "vent_verified": false,
+   "mura_fig": "26",
+   "why": "Evolution 80%: проверка шины по печи; документа на модель в базе нет",
+   "facts": [
+    [
+     "Номенклатура Bryant: 1-я цифра 8 = 80%, 2-я цифра 8 = Evolution",
+     "B800SB_PD стр.3"
+    ],
+    [
+     "880TB в списке Fig. 26 (24V-схема)",
+     "MURA_IM стр.26"
+    ],
+    [
+     "Communicating (Evolution) — PD 880TA в базе НЕТ: не проверено",
+     "—"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Bryant",
+    "type": "Газовая печь",
+    "model": "880TA",
+    "ref": "—",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "cvama",
+   "set": "core",
+   "cat": "coil",
+   "brand": "Carrier/Bryant",
+   "model": "CVAMA",
+   "catalog": "CVPMA → CVAMA",
+   "ref": "R-454B",
+   "rds": "in_box",
+   "third_party": false,
+   "ton": "cvama",
+   "only_with": null,
+   "why": "V-coil R-454B: датчик с завода, плата RDS В КОРОБКЕ змеевика",
+   "facts": [
+    [
+     "Датчик 5V стоит в змеевике с завода; плата в корпусе + жгут питания 8 ft — в комплекте, монтаж на месте",
+     "CVAMA стр.10"
+    ],
+    [
+     "Плату — как можно ближе к блоку управления печи, ≤ 8 ft по жгутам, вертикально, не внутри печи/змеевика/канала",
+     "CVAMA стр.10, 12"
+    ],
+    [
+     "24V: Table 2 — 1 красн → SEC1 печи; 2 зел/фиол → G печи; 3 бел → W термостата; 4 жёлт/фиол → Y наружного; 5 жёлт → Y печи; 6 зел → G термостата; 7 бел/фиол → W печи; 8 чёрн → C печи",
+     "CVAMA стр.11"
+    ],
+    [
+     "Communicating: провода 3–7 не используются (каждый отрезать и заизолировать отдельно); CCN plug A зел / B жёлт / C бел / D красн; GRN/VIO → dissipation terminal (только коммуникационные печи Carrier с Q4 2023)",
+     "CVAMA стр.11–12"
+    ],
+    [
+     "CCN plug в комплект змеевика НЕ входит → ACAINTDIS10A (10 шт.)",
+     "CVAMA стр.10; CVAMA_SS стр.4"
+    ],
+    [
+     "Если постоянный вентилятор (G) не даёт мин. расход Table 6 → кит ACAWHNDIS01A",
+     "CVAMA стр.12–13; CVAMA_SS стр.4"
+    ],
+    [
+     "Горизонтальная установка — перенести датчик в отмеченное место",
+     "CVAMA стр.10"
+    ],
+    [
+     "Над жилой зоной — внешний поддон под весь блок + вторичный дренаж; float switch",
+     "CVAMA стр.9"
+    ],
+    [
+     "Общая серия Carrier и Bryant",
+     "BRY_LK стр.26; CAR_TG стр.4"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier/Bryant",
+    "type": "Змеевик печи (furnace coil)",
+    "model": "CVPMA → CVAMA",
+    "ref": "R-410A → R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "caamp",
+   "set": "core",
+   "cat": "coil",
+   "brand": "Carrier/Bryant",
+   "model": "CAAMP",
+   "catalog": "CAPMP → CAAMP",
+   "ref": "R-454B",
+   "rds": "in_box",
+   "rds_wiring_verified": false,
+   "third_party": false,
+   "ton": null,
+   "only_with": null,
+   "why": "A-coil R-454B, тот же тип RDS (плата в коробке); IM CAAMP в базе нет",
+   "facts": [
+    [
+     "Furnace coil: «Sensor factory installed, Board and Housing in box shipped with coil»",
+     "CAR_TG стр.4, 6; BRY_LK стр.13, 26"
+    ],
+    [
+     "Распиновка — IM CAAMP в базе нет; по аналогии с CVAMA Table 2 — не проверено, сверь с наклейкой на корпусе платы",
+     "—"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier/Bryant",
+    "type": "Змеевик печи (furnace coil)",
+    "model": "CAPMP → CAAMP",
+    "ref": "R-410A → R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "cvpma",
+   "set": "core",
+   "cat": "coil",
+   "brand": "Carrier/Bryant",
+   "model": "CVPMA",
+   "catalog": "CVPMA → CVAMA",
+   "ref": "R-410A",
+   "rds": "none",
+   "third_party": false,
+   "ton": null,
+   "only_with": null,
+   "why": "R-410A V-coil прошлых лет: ловим смешение хладагентов",
+   "facts": [
+    [
+     "R-410A, преемник CVAMA; змеевики не взаимозаменяемы",
+     "CAR_TG стр.4, 7"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier/Bryant",
+    "type": "Змеевик печи (furnace coil)",
+    "model": "CVPMA → CVAMA",
+    "ref": "R-410A → R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "45mulaq",
+   "set": "core",
+   "cat": "coil",
+   "brand": "Carrier/Bryant",
+   "model": "45MULAQ",
+   "catalog": "40MULAQ → 45MULAQ",
+   "ref": "R-454B",
+   "rds": "unknown",
+   "third_party": false,
+   "ton": null,
+   "only_with": [
+    "37MURAQ",
+    "37MUHAQ"
+   ],
+   "why": "furnace coil только для 37MURAQ/37MUHAQ",
+   "facts": [
+    [
+     "Furnace Coils, Multi-Poise, cased; «* This coil is to be used with the 37MURAQ and 37MUHAQ heat pumps only»",
+     "CAR_TG стр.4"
+    ],
+    [
+     "Рейтинги 37MURA + 45MULA есть в PD",
+     "MURA_PD02 стр.1"
+    ],
+    [
+     "Как устроен RDS у 45MULAQ — IM в базе нет: не проверено",
+     "—"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier/Bryant",
+    "type": "Змеевик печи (furnace coil)",
+    "model": "40MULAQ → 45MULAQ",
+    "ref": "R-410A → R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "lnx-ck40ct",
+   "set": "core",
+   "cat": "coil",
+   "brand": "Lennox",
+   "model": "CK40CT",
+   "catalog": "Lennox CK40CT / CK40HT / CK40DT",
+   "ref": "R-454B",
+   "rds": "field_kit",
+   "third_party": true,
+   "ton": null,
+   "only_with": null,
+   "why": "пример ПОЛЕВОГО кита: плата 27A02 продаётся отдельно, датчик — кит 26Z69 (Rev 01) или с завода (Rev 71)",
+   "facts": [
+    [
+     "RDS Non-Comm board 27A02 — отдельный кит; датчик в комплект не входит (в sensor kit, R-454B coil или AHU)",
+     "LX_RDS_NC стр.3"
+    ],
+    [
+     "CK40CT/HT/DT «Revision 01» → sensor kit 26Z69; «Revision 71» → датчик с завода",
+     "LX_RDS_NC стр.8"
+    ],
+    [
+     "Плата ≤ 48\" от ввода кабеля датчика",
+     "LX_RDS_NC стр.7"
+    ],
+    [
+     "Float switch: между термостатом и платой (рвать R или Y), не между трансформатором и платой",
+     "LX_RDS_NC стр.8"
+    ],
+    [
+     "Проводка: термостат → колодка TSTAT (чёрная, туда же наружный блок) → плата → колодка INDOOR (синяя) → печь",
+     "LX_RDS_NC стр.19–21"
+    ],
+    [
+     "Lennox: плата поддерживает печи OEM и не-OEM",
+     "LX_RDS_NC стр.19"
+    ],
+    [
+     "Carrier: «3rd party evaporator coils will not be allowed with our furnaces»",
+     "CAR_R454_IS стр.37"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Сторонний (Lennox)",
+    "type": "Змеевик печи (furnace coil)",
+    "model": "Lennox CK40CT / CK40HT / CK40DT",
+    "ref": "R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "adp-c48a175l159",
+   "set": "core",
+   "cat": "coil",
+   "brand": "ADP",
+   "model": "C48A175L159",
+   "catalog": "ADP C48A175L159",
+   "ref": "R-410A",
+   "ref_verified": false,
+   "rds": "none",
+   "third_party": true,
+   "ton": null,
+   "only_with": null,
+   "why": "красный флаг кейса La Jolla",
+   "facts": [
+    [
+     "По листингам дистрибьюторов — R-410A non-bleed TXV, без A2L-датчика (OEM-документа в базе нет — не проверено)",
+     "LJ_CASE (раздел D1)"
+    ],
+    [
+     "Carrier: сторонние змеевики с печами Carrier не допускаются",
+     "CAR_R454_IS стр.37"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Сторонний (ADP)",
+    "type": "Змеевик печи (furnace coil)",
+    "model": "ADP C48A175L159",
+    "ref": "R-410A",
+    "status": "не проверено (по памяти/косвенно) — уточнить"
+   }
+  },
+  {
+   "id": "fe5b",
+   "set": "core",
+   "cat": "fancoil",
+   "brand": "Carrier/Bryant",
+   "model": "FE5B",
+   "catalog": "FE4B → FE5B",
+   "ref": "R-454B",
+   "rds": "factory",
+   "bus": "abcd",
+   "only_with": null,
+   "why": "Infinity-фанкойл: плата и датчик RDS стоят с завода",
+   "facts": [
+    [
+     "Работает с communicating User Interface; на обычный термостат не отвечает, кроме аварийного режима",
+     "FE5B стр.2, 8"
+    ],
+    [
+     "Плата RDS и датчик установлены и подключены с завода; датчик с завода в положении upflow",
+     "FE5B стр.11"
+    ],
+    [
+     "Поплавок: в 24V — в полевой R от клеммы R к термостату; НЕ рвать R прямо от трансформатора (отключит диссипацию); в communicating — по IM и настройке пульта",
+     "FE5B стр.10"
+    ],
+    [
+     "Над жилой зоной — вторичный поддон",
+     "FE5B стр.2"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier/Bryant",
+    "type": "Фанкойл",
+    "model": "FE4B → FE5B",
+    "ref": "R-410A → R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "fj5",
+   "set": "core",
+   "cat": "fancoil",
+   "brand": "Carrier/Bryant",
+   "model": "FJ5",
+   "catalog": "FJ4D → FJ5",
+   "ref": "R-454B",
+   "rds": "factory",
+   "bus": "24v",
+   "only_with": null,
+   "mura_fig": "28",
+   "why": "Comfort-фанкойл R-454B, плата с завода, обычная проводка",
+   "facts": [
+    [
+     "Fan coil: датчик и плата — с завода внутри; «No special wiring», подключение как обычно",
+     "BRY_LK стр.13"
+    ],
+    [
+     "Y идёт через плату диссипации и потом на наружный",
+     "CAR_R454_IS стр.27"
+    ],
+    [
+     "С 37MURA — Fig. 28",
+     "MURA_IM стр.28"
+    ],
+    [
+     "IM FJ5 в базе нет",
+     "—"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier/Bryant",
+    "type": "Фанкойл",
+    "model": "FJ4D → FJ5",
+    "ref": "R-410A → R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "fma5x",
+   "set": "core",
+   "cat": "fancoil",
+   "brand": "Carrier/Bryant",
+   "model": "FMA5X",
+   "catalog": "FMA4X → FMA5X",
+   "ref": "R-454B",
+   "rds": "factory",
+   "bus": "24v",
+   "only_with": null,
+   "mura_fig": "27",
+   "why": "multi-position фанкойл R-454B, 1 ступень; есть схема с 37MURA (Fig. 27)",
+   "facts": [
+    [
+     "FMA5X FCT-5, TXV, 1 ступень",
+     "CAR_TG стр.4"
+    ],
+    [
+     "Все фанкойлы Carrier — с полной системой обнаружения утечки с завода",
+     "CAR_TG стр.7"
+    ],
+    [
+     "С 37MURA — Fig. 27 (FMA5X / FMA5L)",
+     "MURA_IM стр.27"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier/Bryant",
+    "type": "Фанкойл",
+    "model": "FMA4X → FMA5X",
+    "ref": "R-410A → R-454B",
+    "status": "проверено по OEM"
+   }
+  },
+  {
+   "id": "45muaaq",
+   "set": "core",
+   "cat": "fancoil",
+   "brand": "Carrier/Bryant",
+   "model": "45MUAAQ",
+   "catalog": "40MUAAQ → 45MUAAQ / 45MUHAQ",
+   "ref": "R-454B",
+   "rds": "indoor_sensor",
+   "bus": "s1s2",
+   "only_with": [
+    "37MURAQ",
+    "37MUHAQ"
+   ],
+   "why": "родной фанкойл 37MURA (сценарий 1, связь S1/S2)",
+   "facts": [
+    [
+     "«This coil is to be used with the 37MUHAQ and 37MURAQ heat pumps only»",
+     "CAR_TG стр.4"
+    ],
+    [
+     "Сценарий 1: 24V-термостат на фанкойл, RS485 S1/S2; 24V-клеммы ODU не используются; B и W вместе на фанкойле не использовать",
+     "MURA_IM стр.23"
+    ],
+    [
+     "Датчик утечки во внутреннем блоке: при утечке — код ошибки, зуммер, компрессор сразу стоп, внутренний вентилятор включается; ошибка датчика FHCC",
+     "MURA_IM стр.5, 43"
+    ]
+   ],
+   "catalog_row": {
+    "brand": "Carrier/Bryant",
+    "type": "Фанкойл",
+    "model": "40MUAAQ → 45MUAAQ / 45MUHAQ",
+    "ref": "R-410A → R-454B",
+    "status": "проверено по OEM"
+   }
+  }
+ ],
+ "thermostats": [
+  {
+   "id": "car-infinity",
+   "name": "Carrier Infinity System Control SYSTXCCITC01",
+   "brand": "Carrier",
+   "proto": "abcd",
+   "hp": "yes",
+   "aux": "yes",
+   "y2": "yes",
+   "df": "yes",
+   "ob": null,
+   "power": "abcd",
+   "verified": true,
+   "facts": [
+    [
+     "Шина ABCD: A зел Data A+, B жёлт Data B-, C бел 24VAC com, D красн 24VAC hot; 4 провода",
+     "UI_SI стр.14–15"
+    ],
+    [
+     "Indoor (печь/фанкойл) должен быть Infinity, иначе «Indoor unit not found»; 1-ступенчатый 24V наружный питается от indoor; для многоступенчатого 24V может понадобиться NIM SYSTXCCNIM01",
+     "UI_SI стр.8, 20–21"
+    ],
+    [
+     "Поддержка HYBRID HEAT dual fuel",
+     "UI_SI стр.21"
+    ]
+   ]
+  },
+  {
+   "id": "bry-evolution",
+   "name": "Bryant Evolution Connex",
+   "brand": "Bryant",
+   "proto": "abcd",
+   "hp": "unknown",
+   "aux": "unknown",
+   "y2": "unknown",
+   "df": "unknown",
+   "ob": null,
+   "power": "abcd",
+   "verified": false,
+   "facts": [
+    [
+     "Evolution Connex — communicating control для Evolution-систем",
+     "B_PREF_F стр.4"
+    ],
+    [
+     "IM Evolution Connex в базе нет; ABCD-цвета — по Infinity/Evolution Troubleshooting и UI_SI",
+     "UI_SI стр.15"
+    ]
+   ]
+  },
+  {
+   "id": "ecobee-premium",
+   "name": "ecobee Smart Thermostat Premium",
+   "brand": "any",
+   "proto": "24v",
+   "hp": "yes",
+   "aux": "yes",
+   "y2": "yes",
+   "df": "partial",
+   "ob": "yes",
+   "power": "pek",
+   "verified": true,
+   "facts": [
+    [
+     "Клеммы Y1/Y2, O/B, W1/W2 (AUX), PEK в комплекте",
+     "ECO_PREM стр.10"
+    ],
+    [
+     "Compressor Min Outdoor Temp и Aux Heat Max Outdoor Temp (ТН с aux)",
+     "ECO_PREM стр.110–111"
+    ],
+    [
+     "Слова «dual fuel» / настройка одновременной работы с печью в мануале базы не найдены — сверь",
+     "—"
+    ]
+   ]
+  },
+  {
+   "id": "ecobee3-lite",
+   "name": "ecobee3 lite",
+   "brand": "any",
+   "proto": "24v",
+   "hp": "yes",
+   "aux": "yes",
+   "y2": "yes",
+   "df": "partial",
+   "ob": "yes",
+   "power": "pek",
+   "verified": true,
+   "facts": [
+    [
+     "Клеммы Rc, Rh, C, G, Y1, Y2, O/B, W1, W2, PEK",
+     "ECO_3L стр.5"
+    ],
+    [
+     "Схема «Heat pump with auxiliary heat»",
+     "ECO_3L стр.62"
+    ],
+    [
+     "Dual fuel с газовой печью в мануале базы прямо не описан (кейс La Jolla опирается на ecobee web) — не проверено",
+     "LJ_CASE (раздел B)"
+    ]
+   ]
+  },
+  {
+   "id": "pro1-t701",
+   "name": "PRO1 T701 (в концепции «ecobee 701»)",
+   "brand": "any",
+   "proto": "24v",
+   "hp": "no_aux",
+   "aux": "no",
+   "y2": "no",
+   "df": "no",
+   "ob": "yes",
+   "power": "battery_or_24v",
+   "verified": true,
+   "facts": [
+    [
+     "1H/1C, single stage; ТН — только без Aux/Emergency; multi-stage не поддерживается; клеммы O и B; батарейки 2×AA или 18–30 VAC",
+     "PRO1_T701"
+    ],
+    [
+     "Что «ecobee 701» из концепции = PRO1 T701 — догадка: ecobee 701 в базе нет",
+     "—"
+    ]
+   ]
+  },
+  {
+   "id": "honeywell-t6",
+   "name": "Honeywell T6 Pro",
+   "brand": "any",
+   "proto": "24v",
+   "hp": "unknown",
+   "aux": "unknown",
+   "y2": "unknown",
+   "df": "unknown",
+   "ob": "unknown",
+   "power": "unknown",
+   "verified": false,
+   "facts": [
+    [
+     "В архиве базы нет файла T6 Pro; есть только веб-ссылка RES_T6 — возможности не сверены",
+     "RES_T6"
+    ]
+   ]
+  },
+  {
+   "id": "nest",
+   "name": "Google Nest",
+   "brand": "any",
+   "proto": "24v",
+   "hp": "unknown",
+   "aux": "unknown",
+   "y2": "unknown",
+   "df": "unknown",
+   "ob": "unknown",
+   "power": "unknown",
+   "verified": false,
+   "facts": [
+    [
+     "Документа в базе нет",
+     "—"
+    ]
+   ]
+  },
+  {
+   "id": "carrier-cor",
+   "name": "Carrier Cor",
+   "brand": "Carrier",
+   "proto": "24v",
+   "hp": "unknown",
+   "aux": "unknown",
+   "y2": "unknown",
+   "df": "unknown",
+   "ob": "unknown",
+   "power": "unknown",
+   "verified": false,
+   "facts": [
+    [
+     "Документа в базе нет",
+     "—"
+    ]
+   ]
+  },
+  {
+   "id": "bryant-housewise",
+   "name": "Bryant Housewise",
+   "brand": "Bryant",
+   "proto": "24v",
+   "hp": "unknown",
+   "aux": "unknown",
+   "y2": "unknown",
+   "df": "unknown",
+   "ob": "unknown",
+   "power": "unknown",
+   "verified": false,
+   "facts": [
+    [
+     "Документа в базе нет",
+     "—"
+    ]
+   ]
+  },
+  {
+   "id": "payne",
+   "name": "Payne (термостат)",
+   "brand": "any",
+   "proto": "24v",
+   "hp": "unknown",
+   "aux": "unknown",
+   "y2": "unknown",
+   "df": "unknown",
+   "ob": "unknown",
+   "power": "unknown",
+   "verified": false,
+   "facts": [
+    [
+     "Документа в базе нет",
+     "—"
+    ]
+   ]
+  }
+ ],
+ "rules": {
+  "REF_MISMATCH": {
+   "level": "stop",
+   "text": "Хладагент не совпал: {odu} — {r1}, {ind} — {r2}. Змеевики R-454B и R-410A не взаимозаменяемы.",
+   "src": "CAR_TG стр.7"
+  },
+  "REF_MISMATCH_UNVER": {
+   "level": "stop",
+   "text": "Хладагент, похоже, не совпал: {ind} — {r2} по листингам дистрибьюторов (не проверено по OEM), {odu} — {r1}. Проверь шильдик.",
+   "src": "LJ_CASE (D1)"
+  },
+  "R410_CA_NEW": {
+   "level": "stop",
+   "text": "{odu} — R-410A. Новые R-410A AC/HP в Калифорнии нельзя ставить даже для сервиса с 01.01.2025; срок распродажи сплитов закончился 31.12.2025. Если блок остаётся — отметь «Наружный остаётся».",
+   "src": "CAR_TG стр.2"
+  },
+  "R410_EXISTING": {
+   "level": "warn",
+   "text": "Наружный R-410A остаётся. Внутренний R-410A можно ставить только как сервисную замену; это не должно стать «новой системой» (сборка с нуля, рост мощности, замена ≥75% испарителей и 100% наружных).",
+   "src": "CAR_TG стр.2"
+  },
+  "R410_INDOOR_NEW": {
+   "level": "warn",
+   "text": "{ind} — R-410A: Carrier выпускает R-410A внутренние компоненты только для замены. Сверь, что это сервис, а не новая система.",
+   "src": "CAR_TG стр.2"
+  },
+  "ONLY_37MU": {
+   "level": "stop",
+   "text": "{ind} — только для 37MURAQ / 37MUHAQ.",
+   "src": "CAR_TG стр.4"
+  },
+  "THIRD_PARTY_COIL": {
+   "level": "stop",
+   "text": "{ind} — сторонний змеевик. Carrier: «3rd party evaporator coils will not be allowed with our furnaces» (печь {furn}).",
+   "src": "CAR_R454_IS стр.37"
+  },
+  "BUS_NEED_INDOOR": {
+   "level": "stop",
+   "text": "Пульт ABCD, а {who} не на шине. Пульт напишет «Indoor unit not found». Шину проверяем по печи/фанкойлу, змеевик пассивный.",
+   "src": "UI_SI стр.20–21"
+  },
+  "BUS_UNVERIFIED": {
+   "level": "warn",
+   "text": "{who}: communicating не подтверждён документом в базе (PD нет). Проверь шильдик/IM, есть ли разъём ABCD.",
+   "src": "—"
+  },
+  "BUS_OK": {
+   "level": "ok",
+   "text": "Шина ABCD: пульт → {who}. Змеевик на шину не ставят.",
+   "src": "UI_SI стр.8"
+  },
+  "ODU_NEEDS_ABCD": {
+   "level": "stop",
+   "text": "{odu} работает только с Infinity/Evolution пультом. Обычный термостат — только аварийный режим.",
+   "src": "VNA0_PD стр.1; VNA_II стр.17; BRY_LK стр.25"
+  },
+  "ODU_24V_ON_ABCD_1": {
+   "level": "ok",
+   "text": "Наружный 24V одноступенчатый: сигналы 24V даёт Infinity-печь/фанкойл.",
+   "src": "UI_SI стр.8"
+  },
+  "ODU_24V_ON_ABCD_2": {
+   "level": "warn",
+   "text": "Наружный 24V многоступенчатый с пультом ABCD: может понадобиться NIM SYSTXCCNIM01.",
+   "src": "UI_SI стр.8"
+  },
+  "FE5B_24V": {
+   "level": "stop",
+   "text": "FE5B не отвечает на обычный термостат (кроме аварийного режима). Нужен communicating пульт.",
+   "src": "FE5B стр.2, 8"
+  },
+  "MURA_NO_ABCD": {
+   "level": "stop",
+   "text": "37MURA: пульт ABCD не входит в сценарии 1–3 IM. Используй 24V-термостат (сценарий 1 или 3) или KSACN1401AAA (сценарий 2).",
+   "src": "MURA_IM стр.23–24"
+  },
+  "MURA_S1": {
+   "level": "ok",
+   "text": "Сценарий 1: 24V-термостат на фанкойл 45MU, связь S1/S2 (RS485). 24V-клеммы ODU не используются; B и W вместе на фанкойле не использовать. DIP-переключатель 2 на ODU = OFF.",
+   "src": "MURA_IM стр.23–24"
+  },
+  "MURA_S3": {
+   "level": "ok",
+   "text": "Сценарий 3: 24V-термостат, связь с ODU по 24V-клеммам. DIP-переключатель 2 на ODU = ON. Разрешено «third party indoor unit or cased coil and gas furnace». На схемах crossover: R, C, O/B → ODU R, C, B; Y_out платы RDS → ODU Y2.",
+   "src": "MURA_IM стр.24–28"
+  },
+  "MURA_NEVER_S1S2": {
+   "level": "warn",
+   "text": "Никогда не подавай 24V на S1/S2 — «irreversible damage». 24V-клеммы ODU — только для сценария 3.",
+   "src": "MURA_IM стр.23–24"
+  },
+  "MURA_FURN_LIST": {
+   "level": "ok",
+   "text": "Печь {furn} есть в списке Fig. {fig} IM 37MURA.",
+   "src": "MURA_IM стр.25–26"
+  },
+  "MURA_FURN_NOTLIST": {
+   "level": "warn",
+   "text": "Печи {furn} нет в списках Fig. 25/26. Сверь совместимость на cbpeqp.com/Carrierratings.aspx.",
+   "src": "MURA_IM стр.25–26"
+  },
+  "MURA_FC_FIG": {
+   "level": "ok",
+   "text": "Фанкойл {ind}: схема crossover Fig. {fig} IM 37MURA.",
+   "src": "MURA_IM стр.27–30"
+  },
+  "ABCD_MURA410_UNVER": {
+   "level": "warn",
+   "text": "38MURA (R-410A) с пультом ABCD: в документах базы такой схемы нет — не проверено.",
+   "src": "XW_38MURA стр.6"
+  },
+  "MURA410_LIST": {
+   "level": "warn",
+   "text": "38MURA (R-410A): совместимость — по списку 38MURA Crossover Wiring; с печью — только dual-fuel термостат.",
+   "src": "XW_38MURA стр.5–6"
+  },
+  "RV_O": {
+   "level": "ok",
+   "text": "Клапан O: под напряжением в ОХЛАЖДЕНИИ.",
+   "src": "CR_RESSM стр.14"
+  },
+  "RV_O_UNVER": {
+   "level": "warn",
+   "text": "Клапан O (в охлаждении) — по сервис-мануалу Carrier R-22/R-410A; для {odu} документа в базе нет. Проверь по IM блока.",
+   "src": "CR_RESSM стр.14"
+  },
+  "RV_B": {
+   "level": "ok",
+   "text": "Клапан B: под напряжением в НАГРЕВЕ. Не ставь привычное O.",
+   "src": "MURA_IM стр.24; XW_38MURA стр.6"
+  },
+  "TSTAT_NO_HP": {
+   "level": "stop",
+   "text": "{t} не поддерживает этот ТН: {why}.",
+   "src": "PRO1_T701"
+  },
+  "TSTAT_HP_UNKNOWN": {
+   "level": "warn",
+   "text": "{t}: поддержка ТН/O-B не сверена с документом.",
+   "src": "—"
+  },
+  "TSTAT_STAGES": {
+   "level": "stop",
+   "text": "{t}: только 1 ступень, а {odu} — 2 ступени.",
+   "src": "PRO1_T701"
+  },
+  "TSTAT_STAGES_UNKNOWN": {
+   "level": "warn",
+   "text": "{t}: поддержка Y2 не сверена с документом.",
+   "src": "—"
+  },
+  "TSTAT_BRAND": {
+   "level": "warn",
+   "text": "Пульт {t} другого бренда, чем оборудование. Правила в базе нет — сверь с IM.",
+   "src": "—"
+  },
+  "DF_NEED": {
+   "level": "ok",
+   "text": "Dual fuel (ТН + газовая печь): термостат настраивается на dual fuel; одновременная работа ТН и печи запрещена.",
+   "src": "MURA_IM стр.25–26; B800SB стр.18"
+  },
+  "DF_TSTAT_NO": {
+   "level": "stop",
+   "text": "{t} не умеет dual fuel / aux. Для ТН + печь нужен dual-fuel термостат.",
+   "src": "MURA_IM стр.25; PRO1_T701"
+  },
+  "DF_TSTAT_PARTIAL": {
+   "level": "warn",
+   "text": "{t}: dual fuel с газовой печью в мануале базы прямо не описан (в мануале ecobee Premium есть только пороги Compressor Min / Aux Max Outdoor Temp). Проверь настройку: aux = печь, без одновременной работы ТН и печи.",
+   "src": "ECO_PREM стр.110–111; ECO_3L стр.62"
+  },
+  "DF_TSTAT_UNKNOWN": {
+   "level": "warn",
+   "text": "{t}: dual fuel не сверен с документом.",
+   "src": "—"
+  },
+  "DF_HPS": {
+   "level": "warn",
+   "text": "У ТН должен быть high pressure switch для dual fuel — проверь наличие у {odu}.",
+   "src": "MURA_IM стр.25; B800SB стр.18; F59TP6C стр.29"
+  },
+  "DF_OAT": {
+   "level": "warn",
+   "text": "IM 800SB: датчик наружной температуры обязателен во всех HYBRID HEAT. Как OAT получает этот термостат — сверь.",
+   "src": "B800SB стр.18"
+  },
+  "DF_MURA_WD": {
+   "level": "warn",
+   "text": "37MURA в dual fuel: клеммы W и D на ODU не используются.",
+   "src": "MURA_IM стр.25"
+  },
+  "RDS_FACTORY": {
+   "level": "ok",
+   "text": "{ind}: датчик и плата RDS стоят с завода. Особая проводка не нужна; Y идёт через плату к наружному.",
+   "src": "BRY_LK стр.13; CAR_R454_IS стр.26–27"
+  },
+  "RDS_INBOX": {
+   "level": "ok",
+   "text": "{ind}: датчик в змеевике с завода, плата RDS + корпус + жгут 8 ft — в коробке змеевика. Отдельно заказывать не нужно.",
+   "src": "CAR_TG стр.6; BRY_LK стр.13; CVAMA стр.10"
+  },
+  "RDS_INBOX_WIRING_UNVER": {
+   "level": "warn",
+   "text": "{ind}: IM в базе нет — распиновку платы сверь с наклейкой на корпусе (по аналогии с CVAMA Table 2).",
+   "src": "—"
+  },
+  "RDS_UNKNOWN": {
+   "level": "warn",
+   "text": "{ind}: как устроен RDS — документа в базе нет. Не проверено.",
+   "src": "—"
+  },
+  "RDS_FIELD_KIT": {
+   "level": "warn",
+   "text": "{ind}: RDS ставится полевым китом — плата 27A02 (отдельно), датчик — кит 26Z69 для «Revision 01» или с завода у «Revision 71».",
+   "src": "LX_RDS_NC стр.3, 8"
+  },
+  "RDS_MOUNT": {
+   "level": "warn",
+   "text": "Плату RDS — как можно ближе к блоку управления печи, ≤ 8 ft по жгутам, вертикально, жгуты вниз; не внутри печи, змеевика или канала.",
+   "src": "CVAMA стр.10, 12; CAR_R454_IS стр.40"
+  },
+  "RDS_AIRFLOW": {
+   "level": "warn",
+   "text": "Проверь, что постоянный вентилятор печи даёт мин. расход диссипации по Table 6 (по полной заправке, напр. 8 lb → 213 CFM). Если нет — кит ACAWHNDIS01A.",
+   "src": "CVAMA стр.12–13"
+  },
+  "RDS_CCN": {
+   "level": "ok",
+   "text": "Communicating: плата RDS подключается через CCN plug (ABCD), а не через Y. Провода 3–7 жгута не используются — каждый отрезать и заизолировать.",
+   "src": "CVAMA стр.11–12; CAR_R454_IS стр.33–34"
+  },
+  "RDS_DISS_TERM": {
+   "level": "warn",
+   "text": "GRN/VIO → клемма dissipation печи — только у коммуникационных печей Carrier с Q4 2023. У {furn} сверь наличие клеммы.",
+   "src": "CVAMA стр.12"
+  },
+  "RDS_SENSOR_HORIZ": {
+   "level": "warn",
+   "text": "Горизонтально: перенеси датчик в место, отмеченное для horizontal.",
+   "src": "CVAMA стр.10; CAR_R454_IS стр.38"
+  },
+  "RDS_SENSOR_FE5B": {
+   "level": "warn",
+   "text": "FE5B: датчик с завода в положении upflow — для другой ориентации перенеси по IM.",
+   "src": "FE5B стр.11"
+  },
+  "RDS_45MU": {
+   "level": "ok",
+   "text": "45MU: датчик утечки во внутреннем блоке; при утечке — стоп компрессора и вентилятор; ошибка датчика FHCC.",
+   "src": "MURA_IM стр.5, 43"
+  },
+  "FLOAT_24V": {
+   "level": "warn",
+   "text": "Поплавок (R-454B): в полевую R между клеммой R печи/фанкойла и термостатом. НЕ рвать R прямо от трансформатора — отключится диссипация.",
+   "src": "FE5B стр.10"
+  },
+  "FLOAT_COIL": {
+   "level": "warn",
+   "text": "Float switch: в IM {ind} место подключения не указано (сказано только, что он нужен при вторичном поддоне). Не рви питание платы RDS — провода 1 и 8 жгута (их проверяют при «No power»).",
+   "src": "CVAMA стр.9, 11, 13"
+  },
+  "FLOAT_ABCD": {
+   "level": "warn",
+   "text": "Поплавок в communicating: подключить по IM блока и настроить в пульте.",
+   "src": "FE5B стр.10"
+  },
+  "FLOAT_LNX": {
+   "level": "warn",
+   "text": "Lennox RDS: поплавок между термостатом и платой (R или Y), не между трансформатором и платой.",
+   "src": "LX_RDS_NC стр.8"
+  },
+  "ADD_CCN": {
+   "level": "add",
+   "text": "CCN plug ACAINTDIS10A — в коробку змеевика не входит, заказать отдельно (10 шт. в упаковке).",
+   "src": "CVAMA стр.10; CVAMA_SS стр.4"
+  },
+  "PAN_ATTIC": {
+   "level": "add",
+   "text": "Вторичный (внешний) поддон под весь блок + вторичный дренаж и float switch — блок над жилой зоной/на чердаке.",
+   "src": "CVAMA стр.9; FE5B стр.2"
+  },
+  "VENT_B": {
+   "level": "add",
+   "text": "Вент: Type B (Category I, 80%).",
+   "src": "B800SB стр.4; B800SB_PD стр.12"
+  },
+  "VENT_PVC": {
+   "level": "add",
+   "text": "Вент: PVC/CPVC/ABS (Category IV, 90%+), дренаж конденсата.",
+   "src": "F59TP6C стр.5, 29; B915SB стр.5; F59MN7C стр.5"
+  },
+  "VENT_UNVER": {
+   "level": "warn",
+   "text": "Вент для {furn} определён по префиксу модели (58*/8xx = 80% → Type B; 59*/9xx = 90%+ → PVC), документа на модель в базе нет. Сверь шильдик.",
+   "src": "B800SB_PD стр.3"
+  },
+  "GARAGE": {
+   "level": "warn",
+   "text": "Гараж: горелки и источники воспламенения печи ≥ 18\" над полом.",
+   "src": "B800SB стр.5; B915SB стр.6"
+  },
+  "CLOSET_80": {
+   "level": "warn",
+   "text": "Клозет + 80% печь: воздух на горение и вентиляцию — по разделу IM (объём/проёмы, Table 3).",
+   "src": "B800SB стр.7–8"
+  },
+  "NO_C_PEK": {
+   "level": "add",
+   "text": "Нет провода C: ecobee — PEK из комплекта.",
+   "src": "ECO_PREM стр.10; ECO_3L стр.5"
+  },
+  "NO_C_BATT": {
+   "level": "ok",
+   "text": "Нет провода C: T701 работает от батареек 2×AA.",
+   "src": "PRO1_T701"
+  },
+  "NO_C_ABCD": {
+   "level": "stop",
+   "text": "Шине ABCD нужны 4 провода (A, B, C, D). Без C пульт не подключить.",
+   "src": "UI_SI стр.14–15"
+  },
+  "NO_C_UNKNOWN": {
+   "level": "warn",
+   "text": "Нет провода C: как питается {t} — не сверено с документом. Протяни кабель с C.",
+   "src": "—"
+  },
+  "TON_MATCH": {
+   "level": "ok",
+   "text": "Тоннаж: наружный {a} т, змеевик {b} т.",
+   "src": "VNA0_PD стр.2; BRY_LK стр.24; CVAMA_SS стр.2; IM_38MURA стр.3"
+  },
+  "TON_MISMATCH": {
+   "level": "warn",
+   "text": "Тоннаж не совпал: наружный {a} т, змеевик {b} т. Сверь пару по AHRI.",
+   "src": "CVAMA_SS стр.2"
+  },
+  "TON_ODU": {
+   "level": "ok",
+   "text": "Наружный по номеру: {a} т.",
+   "src": "VNA0_PD стр.2; BRY_LK стр.24; IM_38MURA стр.3"
+  },
+  "AHRI": {
+   "level": "warn",
+   "text": "AHRI-пару для этой связки сверь в каталоге (IM 37MURA ссылается на cbpeqp.com/Carrierratings.aspx).",
+   "src": "MURA_IM стр.25"
+  },
+  "COASTAL_YES": {
+   "level": "ok",
+   "text": "У {odu} есть Coastal-исполнение (для побережья).",
+   "src": "CAR_TG стр.3; BRY_LK стр.24–25"
+  },
+  "COASTAL_NO": {
+   "level": "warn",
+   "text": "У {odu} Coastal-исполнения нет (по таблице перехода).",
+   "src": "CAR_TG стр.3; BRY_LK стр.24–25"
+  },
+  "A2L_CHARGE": {
+   "level": "warn",
+   "text": "R-454B: при заправке > 3.91 lb действуют Amin / RDS — сверь площадь помещения по IM.",
+   "src": "MURA_IM стр.4"
+  },
+  "SHARED_BRAND": {
+   "level": "ok",
+   "text": "{ind} — общая серия Carrier и Bryant, бренд не конфликтует.",
+   "src": "BRY_LK стр.26–27; CAR_TG стр.4"
+  }
+ },
+ "fixes": [
+  {
+   "text": "Шину ABCD проверять по печи/фанкойлу, не по змеевику",
+   "src": "UI_SI стр.8, 20–21"
+  },
+  {
+   "text": "986T, 987M, 987T — Evolution fully communicating (подтверждено); 59TN6, 58TN, 880TA — communicating по документу базы НЕ подтверждено (bus='abcd?', предупреждение)",
+   "src": "B_PREF_F стр.4; MURA_IM стр.26"
+  },
+  {
+   "text": "37MURA/38MURA crossover с cased coil + газовой печью разрешён (сценарий 3, Fig. 25/26); 45MUAAQ/45MULAQ — только с 37MU",
+   "src": "MURA_IM стр.24–26; XW_38MURA стр.1–6; CAR_TG стр.4"
+  },
+  {
+   "text": "Общие семейства CVAMA, CAAMP, CAAVU, CSAHP, CVAVA, FE5B, FT5, FJ5, FMA5X, FMA5L, FG5 — Carrier и Bryant",
+   "src": "BRY_LK стр.26–27; CAR_TG стр.4"
+  },
+  {
+   "text": "Все фанкойлы Carrier R-454B — с заводской системой обнаружения утечки",
+   "src": "CAR_TG стр.7; BRY_LK стр.13; CAR_R454_IS стр.26"
+  },
+  {
+   "text": "40MULAQ/45MULAQ — furnace coils (multi-poise, cased)",
+   "src": "CAR_TG стр.4"
+  },
+  {
+   "text": "Плата RDS лежит в коробке змеевика; отдельно не заказывают (CCN plug ACAINTDIS10A — да, для communicating)",
+   "src": "CAR_TG стр.6; CVAMA стр.10; CVAMA_SS стр.4"
+  },
+  {
+   "text": "Communicating: RDS через CCN plug, провода 3–7 не используются",
+   "src": "CVAMA стр.11–12; CAR_R454_IS стр.33–34"
+  },
+  {
+   "text": "Поплавок на R-454B не рвёт R прямо от трансформатора",
+   "src": "FE5B стр.10; LX_RDS_NC стр.8"
+  },
+  {
+   "text": "«ecobee 701» → PRO1 T701 (1H/1C). Соответствие названия не подтверждено",
+   "src": "PRO1_T701"
+  },
+  {
+   "text": "Вент: 58*/8xx → Type B (Cat I); 59*/9xx → PVC (Cat IV)",
+   "src": "B800SB стр.4; B800SB_PD стр.3, 12; F59TP6C стр.5; B915SB стр.5; F59MN7C стр.5"
+  }
+ ],
+ "sources": {
+  "ACC_II": {
+   "title": "Carrier 24AAA/ABB/ABC/ACA/ACC Installation Instructions",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/02/24AAA-ACC-11SI.pdf",
+   "kind": "OEM IM",
+   "file": "24AAA-ACC-11SI.pdf"
+  },
+  "B800SB": {
+   "title": "Bryant 800SB/801SB Installation Instructions",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/0F/II800SB-01.pdf",
+   "kind": "OEM IM",
+   "file": "II800SB-01.pdf"
+  },
+  "B800SB_PD": {
+   "title": "Bryant 800SB/801SB Product Data",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/07/PDS800SB-01.pdf",
+   "kind": "OEM PD",
+   "file": "PDS800SB-01.pdf"
+  },
+  "B915SB": {
+   "title": "Bryant 915SB Installation/Service Instructions",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/05/II915SB-04.pdf",
+   "kind": "OEM IM",
+   "file": "II915SB-04.pdf"
+  },
+  "BRY_LK": {
+   "title": "Bryant Puron Advance Launch Kit (2024)",
+   "url": "https://resource.carrierenterprise.com/is/content/Watscocom/ce_hom_bryantinfo_20240808_bryant-launch-kit_documentpdf",
+   "kind": "OEM",
+   "file": "Bryant-Puron-Advance-Launch-Kit.pdf"
+  },
+  "B_PREF_F": {
+   "title": "Bryant Preferred Series furnaces brochure 01-8114-011-01",
+   "url": "https://www.shareddocs.com/hvac/docs/1010/Public/0D/01-8114-011-01.pdf",
+   "kind": "OEM brochure",
+   "file": "Bryant-Preferred-Furnaces-01-8114-011-01.pdf"
+  },
+  "CAR_R454_IS": {
+   "title": "Carrier: R-454B Installation & Service (training deck, 2024)",
+   "url": "https://resource.carrierenterprise.com/is/content/Watscocom/ce_hom_home_20240520_r-454b-install-service_documentpdf",
+   "kind": "OEM training",
+   "file": "Carrier-R454B-Install-Service.pdf"
+  },
+  "CAR_TG": {
+   "title": "2025 Carrier Equipment Transition Guide (Carrier Enterprise, Rev.3 11/2024)",
+   "url": "https://resource.carrierenterprise.com/is/content/Watscocom/CE_Global_454-B_equipment-reference-guide_20250520_Carrier_8.5x11pdf",
+   "kind": "OEM/дистрибьютор",
+   "file": "Carrier-2025-Equipment-Transition-Guide.pdf"
+  },
+  "CAR_WEB_F": {
+   "title": "Carrier.com — линейка газовых печей (2026)",
+   "url": "https://www.carrier.com/residential/en/us/products/furnaces/",
+   "kind": "OEM web",
+   "file": ""
+  },
+  "CR_RESSM": {
+   "title": "Carrier Residential Air Conditioners and Heat Pumps Using R-22 and Puron — Application Guideline and Service Manual",
+   "url": "https://resource.carrierenterprise.com/is/content/Watscocom/carrier_24abb336abn3_article_1483695143169_en_sm",
+   "kind": "OEM manual",
+   "file": "archive/manuals3/Carrier-ResAC-HP-SM.pdf"
+  },
+  "CVAMA": {
+   "title": "Carrier CVAMA Cased Coil (R-454B) Installation Instructions",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/08/IM-CVAMA-01.pdf",
+   "kind": "OEM IM",
+   "file": "IM-CVAMA-01.pdf"
+  },
+  "CVAMA_SS": {
+   "title": "Carrier CVAMA Product Data SS-CVAMA-01 (R-454B cased coil)",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/04/SS-CVAMA-01.pdf",
+   "kind": "OEM PD",
+   "file": "/workspace/hv/cvama_ss.pdf"
+  },
+  "ECO_3L": {
+   "title": "ecobee3 lite installation guide",
+   "url": "https://assets.ctfassets.net/a3qyhfznts9y/zT4yxK8iSnaBlBPzGOIad/7d6d1ce84f06c3b5573f0b936658fdca/ecobee3lite_installation_guide.pdf",
+   "kind": "OEM (ecobee)",
+   "file": "e3lite.pdf"
+  },
+  "ECO_PREM": {
+   "title": "ecobee Premium install/setup manual",
+   "url": "https://downloads.ctfassets.net/a3qyhfznts9y/4JZlbdlkyh7lseeMvenfJY/2bea037b752b3b200759969bcc82dcf5/ecobee_Premium_install-setup-user_manual_v1.pdf",
+   "kind": "OEM (ecobee)",
+   "file": "premium.pdf"
+  },
+  "F59MN7C": {
+   "title": "Carrier 59MN7C Installation/Service Instructions",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/03/59MN7C-01SI.pdf",
+   "kind": "OEM IM",
+   "file": "59MN7C-01SI.pdf"
+  },
+  "F59SC5_PD": {
+   "title": "Carrier 59SC5B / Bryant 915SB Product Data",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/09/59SC5B-03PD.pdf",
+   "kind": "OEM PD",
+   "file": "59SC5B-03PD.pdf"
+  },
+  "F59TP6C": {
+   "title": "Carrier 59TP6C Installation/Start-up/Service Instructions",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/0E/59TP6C-01SI.pdf",
+   "kind": "OEM IM",
+   "file": "59TP6C-01SI.pdf"
+  },
+  "FE5B": {
+   "title": "Carrier FE5B Fan Coil Installation Instructions (R-454B)",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/06/IM-FE5B-04.pdf",
+   "kind": "OEM IM",
+   "file": "IM-FE5B-04.pdf"
+  },
+  "IM_38MURA": {
+   "title": "Carrier 38MURA Installation Instructions (R-410A); файл ошибочно назван 37MURA-Installation-Manual.pdf",
+   "url": "",
+   "kind": "OEM IM",
+   "file": "/workspace/hv/37MURA-Installation-Manual.pdf"
+  },
+  "LJ_CASE": {
+   "title": "Полевой кейс La Jolla: 2 системы dual fuel (hvac_plan_ru.md), частично проверен; имя и адрес клиента не переносить",
+   "url": "",
+   "kind": "полевой кейс",
+   "file": "/workspace/hvac_plan_ru.md"
+  },
+  "LX_RDS_NC": {
+   "title": "Lennox RDS Non-Communicating Control Board Installation & Setup Guide 508426-01b (LED/Red codes)",
+   "url": "https://www.lennox.com/dA/0d5a57e504/508426-01b.pdf",
+   "kind": "OEM manual",
+   "file": "archive/manuals3/Lennox-RDS-NonComm-508426.pdf"
+  },
+  "MURA_IM": {
+   "title": "Carrier 37MURA Crossover HP (R-454B) Installation Manual",
+   "url": "https://expressoverstock.com/pdfs/Carrier/37MURA_Heat_Pump_R454B-IM.pdf",
+   "kind": "OEM IM (копия дилера)",
+   "file": "37MURA_Heat_Pump_R454B-IM.pdf"
+  },
+  "MURA_PD02": {
+   "title": "Carrier 37MURA Product Data (37MURA + 45MUAA / 45MULA, файл pd02)",
+   "url": "",
+   "kind": "OEM PD",
+   "file": "/workspace/hv/pd02.pdf"
+  },
+  "PRO1_T701": {
+   "title": "Notion Equipment Library — карточка PRO1 T701 (статус «Проверено», по PRO1 Installation Manual); ссылка на личную базу в публичные данные не выносится",
+   "url": "",
+   "kind": "вторичный (карточка по OEM IM)",
+   "file": ""
+  },
+  "RES_T6": {
+   "title": "Resideo/Honeywell T6 Pro installer setup (ISU)",
+   "url": "https://docs.honeywellhome.com/t6-pro-ii/en-us/Content/Installation-Instructions/5.%20Installer%20Setup%20(ISU).htm",
+   "kind": "OEM (Resideo)",
+   "file": ""
+  },
+  "UI_SI": {
+   "title": "Carrier Infinity Touch Control SYSTXCCITC01 Installation Instructions (-11SI)",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/09/SYSTXCCITC-11SI.pdf",
+   "kind": "OEM IM",
+   "file": "SYSTXCCITC-11SI.pdf"
+  },
+  "VNA0_PD": {
+   "title": "Carrier 27VNA0 Product Data (R-454B)",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/01/27VNA0-01PD.pdf",
+   "kind": "OEM PD",
+   "file": "27VNA0-01PD.pdf"
+  },
+  "VNA_II": {
+   "title": "Carrier 24VNA6 Installation Instructions",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/04/24VNA6-01SI.pdf",
+   "kind": "OEM IM",
+   "file": "24VNA6-01SI.pdf"
+  },
+  "VNA_SM": {
+   "title": "Carrier 24VNA6/25VNA4 Infinity VS Service Manual",
+   "url": "https://www.shareddocs.com/hvac/docs/1009/Public/01/24VNA6-25VNA4-1SM.pdf",
+   "kind": "OEM SM",
+   "file": "24VNA6-25VNA4-1SM.pdf"
+  },
+  "XW_38MURA": {
+   "title": "Carrier 38MURA Crossover Wiring Instructions Rev 00",
+   "url": "",
+   "kind": "OEM",
+   "file": "/workspace/hv/xw.pdf"
+  }
+ },
+ "problems": []
+}
