@@ -45,7 +45,7 @@ L = ["# SOURCES — источник на каждый факт", "", f"Сген
      "«нет документа — не проверено» = факт в документах базы не найден; в приложении такой факт показан как «не проверено».", "",
      "## Реестр документов (ключ → файл)", "", "| Ключ | Документ | Файл / URL |", "|---|---|---|"]
 for k, s in sorted(S.items()): L.append(f"| {k} | {s['title']} | {s['file'] or ''} {s['url'] or ''} |")
-L += ["", "Пути `archive/…` и `build/…` — от /workspace/hvac-research/; `/workspace/hv/` — папка с новыми PDF.", ""]
+L += ["", "Пути `archive/…` — от /workspace/hvac-research/; имя файла без папки — это /workspace/hvac-research/archive/manuals/; `/workspace/hv/` — папка с новыми PDF.", ""]
 L += ["## Факты по моделям", ""]
 for m in d["models"]:
     L.append(f"### {m['brand']} {m['model']} ({m['cat']}, {m['set']})")

@@ -38,7 +38,7 @@
 | VNA_SM | Carrier 24VNA6/25VNA4 Infinity VS Service Manual | 24VNA6-25VNA4-1SM.pdf https://www.shareddocs.com/hvac/docs/1009/Public/01/24VNA6-25VNA4-1SM.pdf |
 | XW_38MURA | Carrier 38MURA Crossover Wiring Instructions Rev 00 | /workspace/hv/xw.pdf  |
 
-Пути `archive/…` и `build/…` — от /workspace/hvac-research/; `/workspace/hv/` — папка с новыми PDF.
+Пути `archive/…` — от /workspace/hvac-research/; имя файла без папки — это /workspace/hvac-research/archive/manuals/; `/workspace/hv/` — папка с новыми PDF.
 
 ## Факты по моделям
 
